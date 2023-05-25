@@ -1,5 +1,9 @@
 # BerkeleyDataBootcampProjectONE
 
+#### notes
+- ideally, we have data that has a dedicated ZIPCODE column (easier to merge)
+- a STATE column is kept in the shorterdf file for easier visualization purposes as we can just use pandas to filter for a state or two and see what things look like on a smaller scale
+
 #### sources so far
 - [money data](https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-2020-zip-code-data-soi)
 - [zip conversion](https://simplemaps.com/data/us-zips)
