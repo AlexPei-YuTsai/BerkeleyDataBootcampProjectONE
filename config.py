@@ -1,1 +1,0 @@
-energy_api_key = "7tLpRKsBk6NWLRS7AsaJ6T58bmGnDzcBeQnVehPY"
