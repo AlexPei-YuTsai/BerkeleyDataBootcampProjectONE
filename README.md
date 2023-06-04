@@ -25,6 +25,11 @@ TODO_key = "a1b2c3d4e5f6g7h8i9"
 - ideally, we have data that has a dedicated ZIPCODE column (easier to merge)
 - a STATE column is kept in the shorterdf file for easier visualization purposes as we can just use pandas to filter for a state or two and see what things look like on a smaller scale
 
+### State Wage and Crime data
+The code reads and manipulates two datasets: "wage_estimates" and "crime_data." The "wage_estimates" dataset contains information about wage estimates for various occupations in different states. It creates a summary dataframe called "wage_estimates_summary" with columns "State," "Occupation," "Average hourly wage," "Average annual wage," "Median hourly wage," and "Median annual wage." The "crime_data" dataset contains information about crime statistics in different states. It selects specific columns from the "crime_data" dataset to create a summary dataframe called "crime_summary." The code filters the "crime_summary" dataframe to keep only data for 2020, creating a new dataframe called "crime_data_2020." Then, the code merges the "wage_estimates_summary" and "crime_data_2020" dataframes based on the common "State" column.
+Finally, the code creates a scatter plot using the matplotlib library in Python, displaying the relationship between average annual wage and total crimes in 2020. The plot is labeled "Average Annual Wage vs Total Crimes (2020)." A linear regression line is fitted to the data using the numpy library's polyfit function, and the slope and y-intercept are calculated. The correlation coefficient is calculated using the scipy library's pearsonr function, indicating a positive but moderate correlation between the two variables. The plot displays the relationship visually, with the trend line illustrating the direction of the relationship and the correlation coefficient providing a numerical measure of the strength of the correlation.
+
+
 #### sources so far
 - [money data](https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-2020-zip-code-data-soi)
 - [zip conversion](https://simplemaps.com/data/us-zips)
